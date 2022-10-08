@@ -17,6 +17,8 @@ jobs:
           with:
             deno-version: "1.26.0"
 
+        - run: mkdir -p dist/currency
+
         - run: deno run --allow-all get-currencies.ts
 
         - uses: JamesIves/github-pages-deploy-action@4.1.0
